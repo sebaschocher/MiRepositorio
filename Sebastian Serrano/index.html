@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384- GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous">
+    <title>Alta Pinta</title>
+</head>
+
+<body>
+    <header>
+        <div id="Inicio">
+            <img src="./Imagenes/Logo.jpg" alt="Logo de Alta Pinta">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Redes">Redes</a></li>
+                <li><a href="#Productos">Productos</a></li>
+                <li><a href="#Nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="Nosotros">
+        <div class="presentacion">
+            <h1>---Simplemente somos---</h1>
+            <p>Una pastelería de alta calidad, nos dedicamos apasionadamente a crear experiencias culinarias
+                extraordinarias. Cada creación es una obra de arte comestible, elaborada con los ingredientes más finos
+                y técnicas de vanguardia. Te invitamos a disfrutar de nuestra selección exclusiva de pasteles y
+                deliciosos dulces, donde la elegancia se encuentra con la perfección en cada bocado. Bienvenidos a
+                nuestra pastelería, donde la excelencia es nuestro sello distintivo.</p>
+        </div>
+    </div>
+    <div id="Productos">
+        <div class="contenedor">
+            <div class="caja">
+                <img src="./Imagenes/Variedades de tortas.jpg" alt="Variedad de tortas">
+                <h1>Nuestras Tortas</h1>
+                <p>Ven y disfruta de nuestras exquisitas variedades de tortas. Desde la clásica torta de chocolate
+                    hasta opciones más atrevidas como frutos rojos, piña y coco, café y avellanas, y caramelo salado con
+                    chocolate. Deliciosos sabores que te cautivarán en cada bocado. ¡Déjate tentar por nuestras
+                    creaciones y disfruta de un festín de sabores!</p>
+            </div>
+            <div class="caja">
+                <img src="./Imagenes/Variedades de cupcake.jpg" alt="Cupcakes">
+                <h1>Nuestros Cupcakes</h1>
+                <div id="contenido">
+                    <p>Descubre nuestras deliciosas variedades de cupcakes. Desde los clásicos de vainilla con glaseado
+                        de chocolate, hasta sabores más audaces como limón con crema de frambuesa. Disfruta de estas
+                        pequeñas delicias llenas de sabor y alegría. ¡Ven y prueba nuestros cupcakes irresistibles!</p>
+                    <button id="mostrarParrafo" onclick="mostrarParrafo()">Mostrar párrafo</button>
+                    <p id="parrafoOculto" style="display: none;">sabias? ¡¡todos nuestros productos son bajos en calorias!!</p>
+                </div>
+            </div>
+            <div class="caja">
+                <img src="./Imagenes/Variedades de postres.jpg" alt="Postres">
+                <h1>Nuestros Postres</h1>
+                <p>Disfruta de nuestros irresistibles postres. Desde clásicos como el flan de vainilla y el tiramisú,
+                    hasta opciones más atrevidas como el crumble de manzana y el soufflé de chocolate. También
+                    ofrecemos opciones frutales como la macedonia de frutas y el cheesecake de fresa. ¡Ven y prueba
+                    nuestros deliciosos postres!</p>
+            </div>
+        </div>
+    </div>
+    <div id="Nosotros">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <h1>Disfruta más de nuestros postres, increíbles variedades</h1>
+                <div class="carousel-item active">
+                    <img src="./Imagenes/Torta de Chocolate.jpg" class="d-block w-100" alt="Carousel 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imagenes/Torta de Naranja.jpg" class="d-block w-100" alt="Carousel 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imagenes/Torta de vainilla.jpg" class="d-block w-100" alt="Carousel 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1906902325113!2d-58.41092722500446!3d-34.599339257265754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb9cb989b849%3A0xf592a12dd3cfa152!2sAlta%20Pinta!5e0!3m2!1ses!2sar!4v1686498786798!5m2!1ses!2sar"
+            width="560" height="315" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3hA5yrzkgIQ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <p>Conoce nuestras políticas de privacidad y de ventas | 2023 Alta Pinta Argentina. Todos los derechos
+            reservados.</p>
+        <div class="redes" id="Redes">
+            <h2>Redes de Alta Pinta</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/alta-pinta" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/alta_pinta" target="_blank">Instagram</a></li>
+                <li><a href="https://www.twitter.com/alta_pinta" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function mostrarParrafo () {
+            var parrafo = document.getElementById("parrafoOculto");
+            if (parrafo.style.display === "none") {
+                parrafo.style.display = "block";
+            } else {
+                parrafo.style.display = "none";
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

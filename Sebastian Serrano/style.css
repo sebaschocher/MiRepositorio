@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li:first-child {
+    margin-left: 0;
+}
+
+header ul li a {
+    font-size: 18px;
+    color: brown;
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+header img {
+    width: 180px;
+}
+
+h1 {
+    font-size: 34px;
+    color: brown;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(1, 19, 13);
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+.presentacion {
+    width: 100%;
+    font-family: 'Dancing Script', cursive;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caja {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.caja img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: blanchedalmond;
+}
+
+.caja h1 {
+    font-size: 24px;
+    color: brown;
+    margin: 10px 0;
+}
+
+.caja p {
+    font-size: 18px;
+    color: rgb(1, 19, 13);
+}
+
+footer {
+    background-color: blanchedalmond;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(1, 19, 13);
+}
+
+.redes {
+    margin-top: 20px;
+}
+
+.redes h2 {
+    font-size: 24px;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.redes ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.redes ul li {
+    margin: 0 10px;
+}
+
+.redes ul li a {
+    text-decoration: none;
+    color: rgb(1, 19, 13);
+    font-size: 18px;
+}
+
+/* Estilos para el carrusel modificado */
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
+  margin: 0 auto; /* Centra horizontalmente el carrusel */
+  position: relative; /* Agrega posicionamiento relativo */
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1; /* Asegura que las flechas estén encima de las imágenes */
+}
+
+.carousel-control-prev {
+  left: 0;
+  transform: translate(-50%, -50%); /* Centra vertical y horizontalmente la flecha previa */
+}
+
+.carousel-control-next {
+  right: 0;
+  transform: translate(50%, -50%); /* Centra vertical y horizontalmente la flecha siguiente */
+}
+
+.carousel-indicators {
+  bottom: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-indicators li {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  border: none;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color: brown;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); 
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
